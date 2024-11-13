@@ -249,7 +249,15 @@ public class GameControllerKit: ObservableObject {
                 (gamepad.dpad.up, .dpadUp),
                 (gamepad.dpad.down, .dpadDown),
                 (gamepad.dpad.left, .dpadLeft),
-                (gamepad.dpad.right, .dpadRight)
+                (gamepad.dpad.right, .dpadRight),
+                (gamepad.leftThumbstick.up, .dpadUp),
+                (gamepad.leftThumbstick.down, .dpadDown),
+                (gamepad.leftThumbstick.left, .dpadLeft),
+                (gamepad.leftThumbstick.right, .dpadRight),
+                (gamepad.rightThumbstick.up, .dpadUp),
+                (gamepad.rightThumbstick.down, .dpadDown),
+                (gamepad.rightThumbstick.left, .dpadLeft),
+                (gamepad.rightThumbstick.right, .dpadRight)
             ])
 
             if let playstationGamepad = controller.physicalInputProfile as? GCDualSenseGamepad {
